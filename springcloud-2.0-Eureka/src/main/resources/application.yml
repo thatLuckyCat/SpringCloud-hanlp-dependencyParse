@@ -1,0 +1,15 @@
+###服务端口号
+server:
+  port: 8800
+#Eureka 相关配置
+eureka:
+  instance:
+    ###注册中心地址
+    hostname: 127.0.0.1
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  # 是否把自己作为服务注册到其他服务注册中心
+    register-with-eureka: false
+   # 是否从其他的服务中心同步服务列表
+    fetch-registry: false
