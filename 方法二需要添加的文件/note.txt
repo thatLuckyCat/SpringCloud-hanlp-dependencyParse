@@ -1,0 +1,6 @@
+1.将下载好的data数据包放在springcloud-2.0-dependencyParse的resources文件夹下，
+
+2.修改properties属性文件。
+root=
+
+IOAdapter=com.springcloud.util.ResourcesFileIoAdapter
